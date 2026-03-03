@@ -517,6 +517,58 @@
 
     <div class="doc doc-contents first">
 
+        <p>A plotting module, useful for analyzing PLUMED colvar files from local collective variables (CVs).</p>
+<p>Contains the parent class 'PLUMEDAnalyzer' which initializes the appropriate
+attributes common to all forms of local CV plotting. The @classmethods of
+PLUMEDAnalyzer set up consistent settings for generating various kinds of plots
+corresponding to CV type. E.g., for the distance CV type, a conversion_factor
+of 10 is needed to convert the native PLUMED distance unit of nanometers to the
+more desirable unit of Ångstroms, which is useful whether the generated plot is
+a KDE, a scatterplot, etc. The various child classes of PLUMEDAnalyzer define
+the particular plotting schemes (such as KDE, heatmap). </p>
+<p>Important Note: This module depends on the PLUMED colvar files being generated
+in a particular format. Firstly, this module only applies to the plotting of
+LOCAL CVs. The resulting colvar files must be dumped in the following format:
+{prefix}_{species}.dat. With the file pertaining to only 1 species of local CV,
+column 0 representing the timestep, or frame information, and columns 1 to n
+representing the local CV data for molecules 1 to n in a system of n molecules.
+A dictionary of {prefix} names defined in this module for all relevant CV types
+is given below.</p>
+
+
+<details class="plumed_prefixes_definitions" open>
+  <summary>dict[CV type (str), prefix (str)] = {</summary>
+  <p>"DISTANCE": "distances",
+"TORSION": "torsions"</p>
+</details>        <p>}</p>
+<p>Typical usage example: Creating a KDE and Heatmap plot for DISTANCE CV data
+from species d1..d8</p>
+<pre><code>Directory structure:
+./{your_system}/traj/distances_d[1..8].dat # colvar files
+./utils/local_CVs.py # this module
+./my_plotting_script.py
+
+In 'my_plotting_script.py':
+    import os
+    from utils.local_CVs import KDEPlotter, HeatmapPlotter
+
+    def main():
+        root = "{your_system}"
+
+        dist_species = [f"d{x}" for x in range(1, 9)]
+        dist_jobs = [(KDEPlotter.distance(s, directory=root),
+                    HeatmapPlotter.distance(s, directory=root)) for s in dist_species]
+
+        for kde, heat in dist_jobs:
+            kde.run()
+
+            low, high = threshold_map.get(kde.species, (None, None))
+            heat.run(low_thresh=low, high_thresh=high)
+
+    if __name__ == "__main__":
+        main()
+</code></pre>
+
 
 
 
@@ -569,8 +621,7 @@ colvar file, the x-axis represents the frame index from the simulation trajector
 
               <details class="mkdocstrings-source">
                 <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">202</span>
-<span class="normal">203</span>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">203</span>
 <span class="normal">204</span>
 <span class="normal">205</span>
 <span class="normal">206</span>
@@ -608,7 +659,8 @@ colvar file, the x-axis represents the frame index from the simulation trajector
 <span class="normal">238</span>
 <span class="normal">239</span>
 <span class="normal">240</span>
-<span class="normal">241</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">HeatmapPlotter</span><span class="p">(</span><span class="n">PLUMEDAnalyzer</span><span class="p">):</span>
+<span class="normal">241</span>
+<span class="normal">242</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">HeatmapPlotter</span><span class="p">(</span><span class="n">PLUMEDAnalyzer</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Generates Heatmap plots for analyzing CV change over simulation time.</span>
 
 <span class="sd">    The threshold values for the colorbar are determined by the np.percentile() function</span>
@@ -705,8 +757,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
               <details class="mkdocstrings-source">
                 <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">158</span>
-<span class="normal">159</span>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">159</span>
 <span class="normal">160</span>
 <span class="normal">161</span>
 <span class="normal">162</span>
@@ -747,7 +798,8 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <span class="normal">197</span>
 <span class="normal">198</span>
 <span class="normal">199</span>
-<span class="normal">200</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">KDEPlotter</span><span class="p">(</span><span class="n">PLUMEDAnalyzer</span><span class="p">):</span>
+<span class="normal">200</span>
+<span class="normal">201</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">KDEPlotter</span><span class="p">(</span><span class="n">PLUMEDAnalyzer</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Generates KDE plots to see the distribution of the local CV over the system&#39;s molecules.</span>
 
 <span class="sd">    The KDE for a local CV is plotted for each molecule in the system (the molecules that were</span>
@@ -931,8 +983,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
               <details class="mkdocstrings-source">
                 <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 60</span>
-<span class="normal"> 61</span>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 61</span>
 <span class="normal"> 62</span>
 <span class="normal"> 63</span>
 <span class="normal"> 64</span>
@@ -1027,7 +1078,8 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <span class="normal">153</span>
 <span class="normal">154</span>
 <span class="normal">155</span>
-<span class="normal">156</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">PLUMEDAnalyzer</span><span class="p">:</span>
+<span class="normal">156</span>
+<span class="normal">157</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">PLUMEDAnalyzer</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Base class for handling PLUMED CV data loading and metadata.</span>
 
 <span class="sd">    Attributes:</span>
@@ -1251,8 +1303,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">73</span>
-<span class="normal">74</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">74</span>
 <span class="normal">75</span>
 <span class="normal">76</span>
 <span class="normal">77</span>
@@ -1269,7 +1320,8 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <span class="normal">88</span>
 <span class="normal">89</span>
 <span class="normal">90</span>
-<span class="normal">91</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">prefix</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">conversion_factor</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">x_label</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">91</span>
+<span class="normal">92</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">prefix</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">conversion_factor</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">x_label</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Initializes the instance&#39;s attributes for a given subclass with instances corresponding to a particular CV&#39;s metadata.</span>
 
 <span class="sd">    Args: </span>
@@ -1362,8 +1414,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">122</span>
-<span class="normal">123</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">123</span>
 <span class="normal">124</span>
 <span class="normal">125</span>
 <span class="normal">126</span>
@@ -1378,7 +1429,8 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <span class="normal">135</span>
 <span class="normal">136</span>
 <span class="normal">137</span>
-<span class="normal">138</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="normal">138</span>
+<span class="normal">139</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">distance</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;PLUMEDAnalyzer&quot;</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Factory for PLUMED distance CV analyses.</span>
 
@@ -1417,14 +1469,14 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 93</span>
-<span class="normal"> 94</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 94</span>
 <span class="normal"> 95</span>
 <span class="normal"> 96</span>
 <span class="normal"> 97</span>
 <span class="normal"> 98</span>
 <span class="normal"> 99</span>
-<span class="normal">100</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">load_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+<span class="normal">100</span>
+<span class="normal">101</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">load_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Standardized data loading for all PLUMED plots.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Warning: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2"> not found.&quot;</span><span class="p">)</span>
@@ -1506,8 +1558,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">140</span>
-<span class="normal">141</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">141</span>
 <span class="normal">142</span>
 <span class="normal">143</span>
 <span class="normal">144</span>
@@ -1522,7 +1573,8 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <span class="normal">153</span>
 <span class="normal">154</span>
 <span class="normal">155</span>
-<span class="normal">156</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="normal">156</span>
+<span class="normal">157</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">torsion</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;PLUMEDAnalyzer&quot;</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Factory for PLUMED torsion CV analyses.</span>
 
