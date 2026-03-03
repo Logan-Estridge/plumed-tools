@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plumed_tools"
+version = "0.1.0"
+description = "Analysis tools for PLUMED collective variables"
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn"
+]
+authors = [
+  { name="Logan Estridge", email="loganestridge@gmail.com" },
+]
+
+[tool.setuptools]
+packages = ["plumed_tools", "plumed_tools.plotting"]
