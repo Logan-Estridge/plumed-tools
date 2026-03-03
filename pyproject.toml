@@ -16,5 +16,5 @@ authors = [
   { name="Logan Estridge", email="loganestridge@gmail.com" },
 ]
 
-[tool.setuptools]
-packages = ["plumed_tools", "plumed_tools.plotting"]
+[tool.setuptools.packages.find]
+where = ["src"]
