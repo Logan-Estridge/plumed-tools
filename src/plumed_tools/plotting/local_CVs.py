@@ -1,9 +1,3 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import numpy as np
-import os
-
 """A plotting module, useful for analyzing PLUMED colvar files from local collective variables (CVs).
 
 Contains the parent class 'PLUMEDAnalyzer' which initializes the appropriate
@@ -39,7 +33,7 @@ from species d1..d8
 
     In 'my_plotting_script.py':
         import os
-        from utils.local_CVs import KDEPlotter, HeatmapPlotter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        from utils.local_CVs import KDEPlotter, HeatmapPlotter  
 
         def main():
             root = "{your_system}"
@@ -57,6 +51,13 @@ from species d1..d8
         if __name__ == "__main__":
             main()
 """
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+import os
+
 class PLUMEDAnalyzer:
     """Base class for handling PLUMED CV data loading and metadata.
 
