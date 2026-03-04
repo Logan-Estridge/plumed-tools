@@ -1,7 +1,8 @@
 site_name: plumed-tools Documentation
 theme:
-  name: readthedocs
+  name: material
   locale: en
+  logo: logo.png
 
 plugins:
   - mkdocstrings:
