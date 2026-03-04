@@ -1,8 +1,7 @@
 site_name: plumed-tools Documentation
 theme:
-  name: material
-  palette:
-    primary: indigo
+  name: readthedocs
+  locale: en
 
 plugins:
   - mkdocstrings:
