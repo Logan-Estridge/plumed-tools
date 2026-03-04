@@ -24,19 +24,23 @@ PLUMED_prefixes_definitions: dict[CV type (str), prefix (str)] = {
 }
 
 Typical usage example: Creating a KDE and Heatmap plot for DISTANCE CV data
-from species d1..d8
+from species d1..d8.
+
+See "Using plumed_tools" on the home page of the documentation website
+(https://logan-estridge.github.io/plumed-tools/) to learn how to install
+plumed_tools as an editable pip package. 
 
     Directory structure:
-    ./{your_system}/traj/distances_d[1..8].dat # colvar files
-    ./utils/local_CVs.py # this module
+    ./location_of_your_MD_input_files/traj/distances_d[1..8].dat # colvar files
     ./my_plotting_script.py
 
     In 'my_plotting_script.py':
-        import os
-        from utils.local_CVs import KDEPlotter, HeatmapPlotter  
+        import plumed_tools
+        # or if you like to be more specific: 
+        # from plumed_tools.plotting.local_CVs import KDEPlotter, HeatmapPlotter  
 
         def main():
-            root = "{your_system}"
+            root = "location_of_your_MD_input_files"
 
             dist_species = [f"d{x}" for x in range(1, 9)]
             dist_jobs = [(KDEPlotter.distance(s, directory=root),
@@ -44,9 +48,7 @@ from species d1..d8
 
             for kde, heat in dist_jobs:
                 kde.run()
-
-                low, high = threshold_map.get(kde.species, (None, None))
-                heat.run(low_thresh=low, high_thresh=high)
+                heat.run()
 
         if __name__ == "__main__":
             main()
