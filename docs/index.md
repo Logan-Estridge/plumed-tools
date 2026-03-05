@@ -2,12 +2,15 @@
 
 A pip package of analysis and visualization tools for PLUMED collective variables.
 
-# Using plumed_tools
-Step 1. Clone the github repository for the plumed-tools project to your local system/HPC.                                                                                                                                                                                                                                                                                            
-`git clone https://github.com/Logan-Estridge/plumed-tools.git`
+## Installation
+Step 1. Clone the github repository for the plumed-tools project to your local system/HPC.
+
+```bash
+git clone https://github.com/Logan-Estridge/plumed-tools.git
+```
 
 Step 2. Install the plumed_tools package via pip (editable)
-```
+```bash
 cd plumed-tools
 pip install -e .
 ```

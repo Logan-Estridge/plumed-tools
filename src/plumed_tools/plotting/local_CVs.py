@@ -18,12 +18,14 @@ representing the local CV data for molecules 1 to n in a system of n molecules.
 A dictionary of {prefix} names defined in this module for all relevant CV types
 is given below.
 
+```python
 PLUMED_prefixes_definitions: dict[str, str] = {
     "DISTANCE": "distances",
     "TORSION": "torsions",
     "ANGLE": "angles",
     "GYRATION": "radii_of_gyration"
 }
+```
 
 Typical usage example: Creating a KDE and Heatmap plot for DISTANCE CV data
 from species d1..d8.
@@ -37,23 +39,26 @@ plumed_tools as an editable pip package.
     ./my_plotting_script.py
 
     In 'my_plotting_script.py':
-        import plumed_tools as pt
-        # or if you like to be more specific: 
-        # from pt.plotting.local_CVs import KDEPlotter, HeatmapPlotter  
 
-        def main():
-            root = "location_of_your_MD_input_files"
+```python
+import plumed_tools as pt
+# or if you like to be more specific: 
+# from pt.plotting.local_CVs import KDEPlotter, HeatmapPlotter  
 
-            dist_species = [f"d{x}" for x in range(1, 9)]
-            dist_jobs = [(pt.KDEPlotter.distance(s, directory=root),
-                        pt.HeatmapPlotter.distance(s, directory=root)) for s in dist_species]
+def main():
+    root = "location_of_your_MD_input_files"
 
-            for kde, heat in dist_jobs:
-                kde.run()
-                heat.run()
+    dist_species = [f"d{x}" for x in range(1, 9)]
+    dist_jobs = [(pt.KDEPlotter.distance(s, directory=root),
+                pt.HeatmapPlotter.distance(s, directory=root)) for s in dist_species]
 
-        if __name__ == "__main__":
-            main()
+    for kde, heat in dist_jobs:
+        kde.run()
+        heat.run()
+
+if __name__ == "__main__":
+    main()
+```
 """
 import pandas as pd
 import matplotlib
@@ -97,7 +102,11 @@ class PLUMEDAnalyzer:
         self.output_path = ""
 
     def load_data(self) -> pd.DataFrame:
-        """Standardized data loading for all PLUMED plots."""
+        """Standardized data loading for all PLUMED plots.
+
+        Returns:
+            pandas DataFrame of the intance's (species') colvar data file.
+        """
         if not os.path.exists(self.filename):
             raise FileNotFoundError(f"File not found: {self.filename}")
             return None
