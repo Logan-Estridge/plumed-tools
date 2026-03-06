@@ -22,4 +22,5 @@ system/HPC! :)
 If the need arises, you can change any of the source code for the pip package
 in the location you cloned the git repository. 
 
+## Documentation
 Please read the docs for more info: https://logan-estridge.github.io/plumed-tools/
