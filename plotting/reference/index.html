@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,14 +6,14 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../..">
       
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
     
     
@@ -25,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -42,20 +39,30 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
-  </head>
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -74,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#plumed_tools.plotting.local_CVs" class="md-skip">
+        <a href="#modules" class="md-skip">
           Skip to content
         </a>
       
@@ -90,15 +97,14 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="PLUMED Tools Documentation" class="md-header__button md-logo" aria-label="PLUMED Tools Documentation" data-md-component="logo">
+    <a href="../.." title="PLUMED Tools Documentation" class="md-header__button md-logo" aria-label="PLUMED Tools Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -123,30 +129,30 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
       </label>
     
   
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
       </label>
     
   
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to system preference" type="radio" name="__palette" id="__palette_2">
     
       <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
       </label>
     
   
@@ -162,7 +168,7 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -171,15 +177,15 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -205,7 +211,7 @@
         <a href="https://github.com/Logan-Estridge/plumed-tools" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     Logan-Estridge/plumed-tools
@@ -227,7 +233,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -278,7 +284,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -291,10 +297,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="PLUMED Tools Documentation" class="md-nav__button md-logo" aria-label="PLUMED Tools Documentation" data-md-component="logo">
+    <a href="../.." title="PLUMED Tools Documentation" class="md-nav__button md-logo" aria-label="PLUMED Tools Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/logo.png" alt="logo">
 
     </a>
     PLUMED Tools Documentation
@@ -304,7 +309,7 @@
       <a href="https://github.com/Logan-Estridge/plumed-tools" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     Logan-Estridge/plumed-tools
@@ -321,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -404,6 +409,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#plumed_tools.plotting.local_CVs" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -558,8 +575,25 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
+  <a href="#scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scripts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scripts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#plumed_tools.plotting.plot_local_CVs" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -590,6 +624,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -628,18 +667,19 @@
 
   <h1>Plotting</h1>
 
-<p>This page is automatically generated from the docstrings in the source code.</p>
+<p>Modules and Scripts Relevant to Plotting/Analysis of CVs from PLUMED Colvar files.</p>
+<h2 id="modules">Modules</h2>
 
 
 <div class="doc doc-object doc-module">
 
 
 
-<h2 id="plumed_tools.plotting.local_CVs" class="doc doc-heading">
+<h3 id="plumed_tools.plotting.local_CVs" class="doc doc-heading">
             <code>plumed_tools.plotting.local_CVs</code>
 
 
-</h2>
+</h3>
 
     <div class="doc doc-contents first">
 
@@ -660,15 +700,13 @@ column 0 representing the timestep, or frame information, and columns 1 to n
 representing the local CV data for molecules 1 to n in a system of n molecules.
 A dictionary of {prefix} names defined in this module for all relevant CV types
 is given below.</p>
-
-
-<details class="plumed_prefixes_definitions" open>
-  <summary>dict[str, str] = {</summary>
-  <p>"DISTANCE": "distances",
-"TORSION": "torsions",
-"ANGLE": "angles",
-"GYRATION": "radii_of_gyration"</p>
-</details>        <p>}</p>
+<pre><code class="language-python">PLUMED_prefixes_definitions: dict[str, str] = {
+    "DISTANCE": "distances",
+    "TORSION": "torsions",
+    "ANGLE": "angles",
+    "GYRATION": "radii_of_gyration"
+}
+</code></pre>
 <p>Typical usage example: Creating a KDE and Heatmap plot for DISTANCE CV data
 from species d1..d8.</p>
 <p>See "Using plumed_tools" on the home page of the documentation website
@@ -679,23 +717,24 @@ plumed_tools as an editable pip package. </p>
 ./my_plotting_script.py
 
 In 'my_plotting_script.py':
-    import plumed_tools as pt
-    # or if you like to be more specific: 
-    # from pt.plotting.local_CVs import KDEPlotter, HeatmapPlotter
+</code></pre>
+<pre><code class="language-python">import plumed_tools as pt
+# or if you like to be more specific: 
+# from pt.plotting.local_CVs import KDEPlotter, HeatmapPlotter  
 
-    def main():
-        root = "location_of_your_MD_input_files"
+def main():
+    root = "location_of_your_MD_input_files"
 
-        dist_species = [f"d{x}" for x in range(1, 9)]
-        dist_jobs = [(pt.KDEPlotter.distance(s, directory=root),
-                    pt.HeatmapPlotter.distance(s, directory=root)) for s in dist_species]
+    dist_species = [f"d{x}" for x in range(1, 9)]
+    dist_jobs = [(pt.KDEPlotter.distance(s, directory=root),
+                pt.HeatmapPlotter.distance(s, directory=root)) for s in dist_species]
 
-        for kde, heat in dist_jobs:
-            kde.run()
-            heat.run()
+    for kde, heat in dist_jobs:
+        kde.run()
+        heat.run()
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
 </code></pre>
 
 
@@ -721,11 +760,11 @@ In 'my_plotting_script.py':
 
 
 
-<h3 id="plumed_tools.plotting.local_CVs.HeatmapPlotter" class="doc doc-heading">
+<h4 id="plumed_tools.plotting.local_CVs.HeatmapPlotter" class="doc doc-heading">
             <code>HeatmapPlotter</code>
 
 
-</h3>
+</h4>
 
 
     <div class="doc doc-contents ">
@@ -737,7 +776,7 @@ In 'my_plotting_script.py':
         <p>Generates Heatmap plots for analyzing CV change over simulation time.</p>
 <p>The threshold values for the colorbar are determined by the np.percentile() function
 to cut off the top and bottom 2 % of values from the range. Heatmap plots are saved in the
-format {prefix}<em>heatmap</em>{species}.png. E.g., for a distance CV, "d8", the plot will be saved
+format {prefix}<em species="species">heatmap</em>.png. E.g., for a distance CV, "d8", the plot will be saved
 as distances_heatmap_d8.png. The y-axis represents each molecule's CV data present in the 
 colvar file, the x-axis represents the frame index from the simulation trajectory.</p>
 
@@ -750,16 +789,7 @@ colvar file, the x-axis represents the frame index from the simulation trajector
 
               <details class="mkdocstrings-source">
                 <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">245</span>
-<span class="normal">246</span>
-<span class="normal">247</span>
-<span class="normal">248</span>
-<span class="normal">249</span>
-<span class="normal">250</span>
-<span class="normal">251</span>
-<span class="normal">252</span>
-<span class="normal">253</span>
-<span class="normal">254</span>
+                <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">254</span>
 <span class="normal">255</span>
 <span class="normal">256</span>
 <span class="normal">257</span>
@@ -801,24 +831,33 @@ colvar file, the x-axis represents the frame index from the simulation trajector
 <span class="normal">293</span>
 <span class="normal">294</span>
 <span class="normal">295</span>
-<span class="normal">296</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">HeatmapPlotter</span><span class="p">(</span><span class="n">PLUMEDAnalyzer</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Generates Heatmap plots for analyzing CV change over simulation time.</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">HeatmapPlotter</span><span class="p">(</span><span class="n">PLUMEDAnalyzer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Generates Heatmap plots for analyzing CV change over simulation time.</span>
 
 <span class="sd">    The threshold values for the colorbar are determined by the np.percentile() function</span>
 <span class="sd">    to cut off the top and bottom 2 % of values from the range. Heatmap plots are saved in the</span>
-<span class="sd">    format {prefix}_heatmap_{species}.png. E.g., for a distance CV, &quot;d8&quot;, the plot will be saved</span>
-<span class="sd">    as distances_heatmap_d8.png. The y-axis represents each molecule&#39;s CV data present in the </span>
+<span class="sd">    format {prefix}_heatmap_{species}.png. E.g., for a distance CV, "d8", the plot will be saved</span>
+<span class="sd">    as distances_heatmap_d8.png. The y-axis represents each molecule's CV data present in the </span>
 <span class="sd">    colvar file, the x-axis represents the frame index from the simulation trajectory. </span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">low_thresh</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">high_thresh</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Generates heatmap plot</span>
+<span class="w">        </span><span class="sd">"""Generates heatmap plot</span>
 
 <span class="sd">        Args:</span>
 <span class="sd">            data: Defining the data source here allows prevention of duplicate data loading if using </span>
 <span class="sd">                  for loop and plotting multiple kinds of plots from the same CSV file.</span>
 <span class="sd">            low_thresh: Given x-range of data, values below this percentile will be excluded from the cbar</span>
 <span class="sd">            high_thresh: Given x-range of data, values above this percentile will be excluded from the cbar</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">def</span><span class="w"> </span><span class="nf">heat_plot_logic</span><span class="p">():</span>
             <span class="n">df</span> <span class="o">=</span> <span class="n">data</span> <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
             <span class="k">if</span> <span class="n">df</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="k">return</span>
@@ -833,27 +872,27 @@ colvar file, the x-axis represents the frame index from the simulation trajector
             <span class="n">fig</span><span class="o">.</span><span class="n">clf</span><span class="p">()</span>
             <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 
-            <span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">vals</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;nearest&#39;</span><span class="p">,</span>
-                            <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;RdYlBu_r&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">_low</span><span class="p">,</span>
+            <span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">vals</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">'auto'</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">'nearest'</span><span class="p">,</span>
+                            <span class="n">origin</span><span class="o">=</span><span class="s1">'lower'</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">'RdYlBu_r'</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">_low</span><span class="p">,</span>
                             <span class="n">vmax</span><span class="o">=</span><span class="n">_high</span><span class="p">)</span>
 
             <span class="n">cbar</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mf">0.02</span><span class="p">)</span>
             <span class="n">cbar</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x_label</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">270</span><span class="p">,</span> <span class="n">labelpad</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 
-            <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> Heatmap </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">num_mols</span><span class="si">}</span><span class="s2"> Mols&quot;</span><span class="p">)</span>
-            <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Frame Index&quot;</span><span class="p">)</span>
-            <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Molecule Index&quot;</span><span class="p">)</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> Heatmap </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">num_mols</span><span class="si">}</span><span class="s2"> Mols"</span><span class="p">)</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Frame Index"</span><span class="p">)</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Molecule Index"</span><span class="p">)</span>
 
             <span class="k">if</span> <span class="n">num_mols</span> <span class="o">&gt;=</span> <span class="mi">8</span><span class="p">:</span>
                 <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="n">num_mols</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
                 <span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="n">num_mols</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 
-            <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="si">}</span><span class="s2">_heatmap_</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">.png&quot;</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;traj&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span><span class="p">)</span>
-            <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_path</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="si">}</span><span class="s2">_heatmap_</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">.png"</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="s2">"traj"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span><span class="p">)</span>
+            <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_path</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">'tight'</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_run_safely</span><span class="p">(</span><span class="n">heat_plot_logic</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
               </details>
 
 
@@ -872,10 +911,10 @@ colvar file, the x-axis represents the frame index from the simulation trajector
 <div class="doc doc-object doc-function">
 
 
-<h4 id="plumed_tools.plotting.local_CVs.HeatmapPlotter.run" class="doc doc-heading">
+<h5 id="plumed_tools.plotting.local_CVs.HeatmapPlotter.run" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">run</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">low_thresh</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">high_thresh</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
-</h4>
+</h5>
 
 
     <div class="doc doc-contents ">
@@ -949,16 +988,7 @@ colvar file, the x-axis represents the frame index from the simulation trajector
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">254</span>
-<span class="normal">255</span>
-<span class="normal">256</span>
-<span class="normal">257</span>
-<span class="normal">258</span>
-<span class="normal">259</span>
-<span class="normal">260</span>
-<span class="normal">261</span>
-<span class="normal">262</span>
-<span class="normal">263</span>
+              <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">263</span>
 <span class="normal">264</span>
 <span class="normal">265</span>
 <span class="normal">266</span>
@@ -991,15 +1021,24 @@ colvar file, the x-axis represents the frame index from the simulation trajector
 <span class="normal">293</span>
 <span class="normal">294</span>
 <span class="normal">295</span>
-<span class="normal">296</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">low_thresh</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">high_thresh</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Generates heatmap plot</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">low_thresh</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">high_thresh</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Generates heatmap plot</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        data: Defining the data source here allows prevention of duplicate data loading if using </span>
 <span class="sd">              for loop and plotting multiple kinds of plots from the same CSV file.</span>
 <span class="sd">        low_thresh: Given x-range of data, values below this percentile will be excluded from the cbar</span>
 <span class="sd">        high_thresh: Given x-range of data, values above this percentile will be excluded from the cbar</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">heat_plot_logic</span><span class="p">():</span>
         <span class="n">df</span> <span class="o">=</span> <span class="n">data</span> <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
         <span class="k">if</span> <span class="n">df</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="k">return</span>
@@ -1014,27 +1053,27 @@ colvar file, the x-axis represents the frame index from the simulation trajector
         <span class="n">fig</span><span class="o">.</span><span class="n">clf</span><span class="p">()</span>
         <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 
-        <span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">vals</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;nearest&#39;</span><span class="p">,</span>
-                        <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;RdYlBu_r&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">_low</span><span class="p">,</span>
+        <span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">vals</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">'auto'</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">'nearest'</span><span class="p">,</span>
+                        <span class="n">origin</span><span class="o">=</span><span class="s1">'lower'</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">'RdYlBu_r'</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">_low</span><span class="p">,</span>
                         <span class="n">vmax</span><span class="o">=</span><span class="n">_high</span><span class="p">)</span>
 
         <span class="n">cbar</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mf">0.02</span><span class="p">)</span>
         <span class="n">cbar</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x_label</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">270</span><span class="p">,</span> <span class="n">labelpad</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 
-        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> Heatmap </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">num_mols</span><span class="si">}</span><span class="s2"> Mols&quot;</span><span class="p">)</span>
-        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Frame Index&quot;</span><span class="p">)</span>
-        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Molecule Index&quot;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> Heatmap </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">num_mols</span><span class="si">}</span><span class="s2"> Mols"</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Frame Index"</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Molecule Index"</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">num_mols</span> <span class="o">&gt;=</span> <span class="mi">8</span><span class="p">:</span>
             <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="n">num_mols</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
             <span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="n">num_mols</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="si">}</span><span class="s2">_heatmap_</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">.png&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;traj&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span><span class="p">)</span>
-        <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_path</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="si">}</span><span class="s2">_heatmap_</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">.png"</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="s2">"traj"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span><span class="p">)</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_path</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">'tight'</span><span class="p">)</span>
 
     <span class="bp">self</span><span class="o">.</span><span class="n">_run_safely</span><span class="p">(</span><span class="n">heat_plot_logic</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
             </details>
     </div>
 
@@ -1052,11 +1091,11 @@ colvar file, the x-axis represents the frame index from the simulation trajector
 
 
 
-<h3 id="plumed_tools.plotting.local_CVs.KDEPlotter" class="doc doc-heading">
+<h4 id="plumed_tools.plotting.local_CVs.KDEPlotter" class="doc doc-heading">
             <code>KDEPlotter</code>
 
 
-</h3>
+</h4>
 
 
     <div class="doc doc-contents ">
@@ -1068,7 +1107,7 @@ colvar file, the x-axis represents the frame index from the simulation trajector
         <p>Generates KDE plots to see the distribution of the local CV over the system's molecules.</p>
 <p>The KDE for a local CV is plotted for each molecule in the system (the molecules that were
 analyzed with a particular CV and are present in the colvar file). If there are more than 20
-molecules, the legend is omitted. KDE plots are saved in the format {prefix}<em>kde</em>{species}.png.
+molecules, the legend is omitted. KDE plots are saved in the format {prefix}<em species="species">kde</em>.png.
 E.g., for a distance CV, "d8", the plot will be saved as distances_kde_d8.png. The y-axis represents
 the KDE, the x-axis represents the range of the CV data, for example bond distance, etc.</p>
 
@@ -1081,16 +1120,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
               <details class="mkdocstrings-source">
                 <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">201</span>
-<span class="normal">202</span>
-<span class="normal">203</span>
-<span class="normal">204</span>
-<span class="normal">205</span>
-<span class="normal">206</span>
-<span class="normal">207</span>
-<span class="normal">208</span>
-<span class="normal">209</span>
-<span class="normal">210</span>
+                <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">210</span>
 <span class="normal">211</span>
 <span class="normal">212</span>
 <span class="normal">213</span>
@@ -1123,22 +1153,31 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <span class="normal">240</span>
 <span class="normal">241</span>
 <span class="normal">242</span>
-<span class="normal">243</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">KDEPlotter</span><span class="p">(</span><span class="n">PLUMEDAnalyzer</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Generates KDE plots to see the distribution of the local CV over the system&#39;s molecules.</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">KDEPlotter</span><span class="p">(</span><span class="n">PLUMEDAnalyzer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Generates KDE plots to see the distribution of the local CV over the system's molecules.</span>
 
 <span class="sd">    The KDE for a local CV is plotted for each molecule in the system (the molecules that were</span>
 <span class="sd">    analyzed with a particular CV and are present in the colvar file). If there are more than 20</span>
 <span class="sd">    molecules, the legend is omitted. KDE plots are saved in the format {prefix}_kde_{species}.png.</span>
-<span class="sd">    E.g., for a distance CV, &quot;d8&quot;, the plot will be saved as distances_kde_d8.png. The y-axis represents</span>
+<span class="sd">    E.g., for a distance CV, "d8", the plot will be saved as distances_kde_d8.png. The y-axis represents</span>
 <span class="sd">    the KDE, the x-axis represents the range of the CV data, for example bond distance, etc.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Generates KDE plot</span>
+<span class="w">        </span><span class="sd">"""Generates KDE plot</span>
 
 <span class="sd">        Args:</span>
 <span class="sd">            data: Defining the data source here allows prevention of duplicate data loading if using </span>
 <span class="sd">                  for loop and plotting multiple kinds of plots from the same CSV file.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">def</span><span class="w"> </span><span class="nf">kde_plot_logic</span><span class="p">():</span>
             <span class="n">df</span> <span class="o">=</span> <span class="n">data</span> <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
             <span class="k">if</span> <span class="n">df</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="k">return</span>
@@ -1150,23 +1189,23 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
             <span class="n">fig</span><span class="o">.</span><span class="n">clf</span><span class="p">()</span>
             <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 
-            <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_plot</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;colorblind&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_plot</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">"colorblind"</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-            <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">): </span><span class="si">{</span><span class="n">num_mols</span><span class="si">}</span><span class="s2"> mols&quot;</span><span class="p">)</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">): </span><span class="si">{</span><span class="n">num_mols</span><span class="si">}</span><span class="s2"> mols"</span><span class="p">)</span>
             <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x_label</span><span class="p">)</span>
-            <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Density&quot;</span><span class="p">)</span>
-            <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Density"</span><span class="p">)</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
 
             <span class="k">if</span> <span class="n">num_mols</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
                 <span class="n">legend</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_legend</span><span class="p">()</span>
                 <span class="k">if</span> <span class="n">legend</span><span class="p">:</span> <span class="n">legend</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
 
-            <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="si">}</span><span class="s2">_kde_</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">.png&quot;</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;traj&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span><span class="p">)</span>
-            <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_path</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="si">}</span><span class="s2">_kde_</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">.png"</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="s2">"traj"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span><span class="p">)</span>
+            <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_path</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">'tight'</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_run_safely</span><span class="p">(</span><span class="n">kde_plot_logic</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
               </details>
 
 
@@ -1185,10 +1224,10 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <div class="doc doc-object doc-function">
 
 
-<h4 id="plumed_tools.plotting.local_CVs.KDEPlotter.run" class="doc doc-heading">
+<h5 id="plumed_tools.plotting.local_CVs.KDEPlotter.run" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">run</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
-</h4>
+</h5>
 
 
     <div class="doc doc-contents ">
@@ -1230,16 +1269,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">210</span>
-<span class="normal">211</span>
-<span class="normal">212</span>
-<span class="normal">213</span>
-<span class="normal">214</span>
-<span class="normal">215</span>
-<span class="normal">216</span>
-<span class="normal">217</span>
-<span class="normal">218</span>
-<span class="normal">219</span>
+              <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">219</span>
 <span class="normal">220</span>
 <span class="normal">221</span>
 <span class="normal">222</span>
@@ -1263,13 +1293,22 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <span class="normal">240</span>
 <span class="normal">241</span>
 <span class="normal">242</span>
-<span class="normal">243</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Generates KDE plot</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Generates KDE plot</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        data: Defining the data source here allows prevention of duplicate data loading if using </span>
 <span class="sd">              for loop and plotting multiple kinds of plots from the same CSV file.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">kde_plot_logic</span><span class="p">():</span>
         <span class="n">df</span> <span class="o">=</span> <span class="n">data</span> <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
         <span class="k">if</span> <span class="n">df</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="k">return</span>
@@ -1281,23 +1320,23 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
         <span class="n">fig</span><span class="o">.</span><span class="n">clf</span><span class="p">()</span>
         <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 
-        <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_plot</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;colorblind&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_plot</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">"colorblind"</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">): </span><span class="si">{</span><span class="n">num_mols</span><span class="si">}</span><span class="s2"> mols&quot;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">): </span><span class="si">{</span><span class="n">num_mols</span><span class="si">}</span><span class="s2"> mols"</span><span class="p">)</span>
         <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x_label</span><span class="p">)</span>
-        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Density&quot;</span><span class="p">)</span>
-        <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Density"</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">num_mols</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
             <span class="n">legend</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">get_legend</span><span class="p">()</span>
             <span class="k">if</span> <span class="n">legend</span><span class="p">:</span> <span class="n">legend</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="si">}</span><span class="s2">_kde_</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">.png&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;traj&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span><span class="p">)</span>
-        <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_path</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="si">}</span><span class="s2">_kde_</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">.png"</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="s2">"traj"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span><span class="p">)</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">output_path</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">'tight'</span><span class="p">)</span>
 
     <span class="bp">self</span><span class="o">.</span><span class="n">_run_safely</span><span class="p">(</span><span class="n">kde_plot_logic</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
             </details>
     </div>
 
@@ -1315,11 +1354,11 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
 
 
-<h3 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer" class="doc doc-heading">
+<h4 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer" class="doc doc-heading">
             <code>PLUMEDAnalyzer</code>
 
 
-</h3>
+</h4>
 
 
     <div class="doc doc-contents ">
@@ -1428,12 +1467,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
               <details class="mkdocstrings-source">
                 <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 66</span>
-<span class="normal"> 67</span>
-<span class="normal"> 68</span>
-<span class="normal"> 69</span>
-<span class="normal"> 70</span>
-<span class="normal"> 71</span>
+                <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 71</span>
 <span class="normal"> 72</span>
 <span class="normal"> 73</span>
 <span class="normal"> 74</span>
@@ -1561,21 +1595,30 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <span class="normal">196</span>
 <span class="normal">197</span>
 <span class="normal">198</span>
-<span class="normal">199</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">PLUMEDAnalyzer</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Base class for handling PLUMED CV data loading and metadata.</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">PLUMEDAnalyzer</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Base class for handling PLUMED CV data loading and metadata.</span>
 
 <span class="sd">    Attributes:</span>
-<span class="sd">        species (str): The specific identifier for the CV (e.g., &#39;d8&#39;).</span>
+<span class="sd">        species (str): The specific identifier for the CV (e.g., 'd8').</span>
 <span class="sd">        prefix (str): Name of the PLUMED colvar file.</span>
 <span class="sd">        conversion_factor (float): Multiplier to adjust units (e.g., 10.0 for nm to Å).</span>
 <span class="sd">        title (str): The main title string for the generated plot.</span>
 <span class="sd">        x_label (str): The label for the horizontal axis.</span>
 <span class="sd">        filename (str): The derived path to the input data file.</span>
 <span class="sd">        directory (str): The directory containing the colvar file to be analyzed. </span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">prefix</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">conversion_factor</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">x_label</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Initializes the instance&#39;s attributes for a given subclass with instances corresponding to a particular CV&#39;s metadata.</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">prefix</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">conversion_factor</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">x_label</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"."</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">"""Initializes the instance's attributes for a given subclass with instances corresponding to a particular CV's metadata.</span>
 
 <span class="sd">        Args: </span>
 <span class="sd">            species: The species of CV, e.g. d8 for distance 8.</span>
@@ -1583,119 +1626,123 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <span class="sd">            conversion_factor: Scaling factor applied to the raw data values.</span>
 <span class="sd">            title: Title of the plot corresponding to the particular CV.</span>
 <span class="sd">            x_label: X axis label of the plot corresponding to the particular CV (including units).</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">species</span> <span class="o">=</span> <span class="n">species</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">prefix</span> <span class="o">=</span> <span class="n">prefix</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">conversion_factor</span> <span class="o">=</span> <span class="n">conversion_factor</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">x_label</span> <span class="o">=</span> <span class="n">x_label</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">directory</span> <span class="o">=</span> <span class="n">directory</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;traj&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">prefix</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">species</span><span class="si">}</span><span class="s2">.dat&quot;</span><span class="p">)</span> <span class="c1"># derivative of {prefix} and {species} thus not passed into __init__</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="c1"># output name of the saved PNG. Needs to be different </span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="s2">"traj"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">prefix</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">species</span><span class="si">}</span><span class="s2">.dat"</span><span class="p">)</span> <span class="c1"># derivative of {prefix} and {species} thus not passed into __init__</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span> <span class="o">=</span> <span class="s2">""</span> <span class="c1"># output name of the saved PNG. Needs to be different </span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="s2">""</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">load_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Standardized data loading for all PLUMED plots.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Standardized data loading for all PLUMED plots.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            pandas DataFrame of the intance's (species') colvar data file.</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">):</span>
-            <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;File not found: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"File not found: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
             <span class="k">return</span> <span class="kc">None</span>
 
-        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;\s+&#39;</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="n">memory_map</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">'\s+'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s1">'#'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">'c'</span><span class="p">,</span> <span class="n">memory_map</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">conversion_factor</span> <span class="o">!=</span> <span class="mf">1.0</span><span class="p">:</span>
             <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:]</span> <span class="o">*=</span> <span class="bp">self</span><span class="o">.</span><span class="n">conversion_factor</span>
         <span class="k">return</span> <span class="n">df</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_run_safely</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">task_function</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Generic error handler wrapper for child class operations.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Generic error handler wrapper for child class operations."""</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="n">task_function</span><span class="p">()</span>
         <span class="k">except</span> <span class="n">pd</span><span class="o">.</span><span class="n">errors</span><span class="o">.</span><span class="n">EmptyDataError</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2"> contains no data.&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Error: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2"> contains no data."</span><span class="p">)</span>
         <span class="k">except</span> <span class="n">pd</span><span class="o">.</span><span class="n">errors</span><span class="o">.</span><span class="n">ParserError</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2"> is poorly formatted.&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Error: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2"> is poorly formatted."</span><span class="p">)</span>
         <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">ve</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Data Error on </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">ve</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Data Error on </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">ve</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         <span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Permission Error: Cannot access </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Permission Error: Cannot access </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unexpected Error on </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Unexpected Error on </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">species</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         <span class="k">finally</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">plt</span><span class="o">.</span><span class="n">fignum_exists</span><span class="p">(</span><span class="mi">1</span><span class="p">):</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">clf</span><span class="p">()</span>
             <span class="k">if</span> <span class="n">plt</span><span class="o">.</span><span class="n">fignum_exists</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">clf</span><span class="p">()</span>
 
     <span class="nd">@classmethod</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">angle</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;PLUMEDAnalyzer&quot;</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Factory for PLUMED ANGLE CV analyses.</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">angle</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"."</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"PLUMEDAnalyzer"</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">"""Factory for PLUMED ANGLE CV analyses.</span>
 
 <span class="sd">        Args:</span>
 <span class="sd">            species: CV species instantiated by PLUMEDAnalyzer</span>
 <span class="sd">            directory: The root directory where the colvar file is located. For example,</span>
-<span class="sd">                        alpha/traj/torsions_t1.dat &lt;- the root directory is &#39;alpha&#39;.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">                        alpha/traj/torsions_t1.dat &lt;- the root directory is 'alpha'.</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
             <span class="n">species</span><span class="o">=</span><span class="n">species</span><span class="p">,</span>
-            <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;angle&quot;</span><span class="p">,</span>
+            <span class="n">prefix</span><span class="o">=</span><span class="s2">"angle"</span><span class="p">,</span>
             <span class="n">conversion_factor</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-            <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Angle&quot;</span><span class="p">,</span>
-            <span class="n">x_label</span><span class="o">=</span><span class="s2">&quot;Angle (Radians)&quot;</span><span class="p">,</span>
+            <span class="n">title</span><span class="o">=</span><span class="s2">"Angle"</span><span class="p">,</span>
+            <span class="n">x_label</span><span class="o">=</span><span class="s2">"Angle (Radians)"</span><span class="p">,</span>
             <span class="n">directory</span><span class="o">=</span><span class="n">directory</span>
         <span class="p">)</span>
 
     <span class="nd">@classmethod</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">distance</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;PLUMEDAnalyzer&quot;</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Factory for PLUMED DISTANCE CV analyses.</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">distance</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"."</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"PLUMEDAnalyzer"</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">"""Factory for PLUMED DISTANCE CV analyses.</span>
 
 <span class="sd">        Args:</span>
 <span class="sd">            species: CV species instantiated by PLUMEDAnalyzer</span>
 <span class="sd">            directory: The root directory where the colvar file is located. For example,</span>
-<span class="sd">                        alpha/traj/distances_d8.dat &lt;- the root directory is &#39;alpha&#39;.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">                        alpha/traj/distances_d8.dat &lt;- the root directory is 'alpha'.</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
             <span class="n">species</span><span class="o">=</span><span class="n">species</span><span class="p">,</span>
-            <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;distances&quot;</span><span class="p">,</span>
+            <span class="n">prefix</span><span class="o">=</span><span class="s2">"distances"</span><span class="p">,</span>
             <span class="n">conversion_factor</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-            <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Distance&quot;</span><span class="p">,</span>
-            <span class="n">x_label</span><span class="o">=</span><span class="s2">&quot;Distance (Å)&quot;</span><span class="p">,</span>
+            <span class="n">title</span><span class="o">=</span><span class="s2">"Distance"</span><span class="p">,</span>
+            <span class="n">x_label</span><span class="o">=</span><span class="s2">"Distance (Å)"</span><span class="p">,</span>
             <span class="n">directory</span><span class="o">=</span><span class="n">directory</span>
         <span class="p">)</span>
 
     <span class="nd">@classmethod</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">rad_gyration</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;PLUMEDAnalyzer&quot;</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Factory for PLUMED GYRATION CV analyses.</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">rad_gyration</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"."</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"PLUMEDAnalyzer"</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">"""Factory for PLUMED GYRATION CV analyses.</span>
 
 <span class="sd">        Args:</span>
 <span class="sd">            species: CV species instantiated by PLUMEDAnalyzer</span>
 <span class="sd">            directory: The root directory where the colvar file is located. For example,</span>
-<span class="sd">                        alpha/traj/torsions_t1.dat &lt;- the root directory is &#39;alpha&#39;.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">                        alpha/traj/torsions_t1.dat &lt;- the root directory is 'alpha'.</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
             <span class="n">species</span><span class="o">=</span><span class="n">species</span><span class="p">,</span>
-            <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;radii_of_gyration&quot;</span><span class="p">,</span>
+            <span class="n">prefix</span><span class="o">=</span><span class="s2">"radii_of_gyration"</span><span class="p">,</span>
             <span class="n">conversion_factor</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-            <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Distance&quot;</span><span class="p">,</span>
-            <span class="n">x_label</span><span class="o">=</span><span class="s2">&quot;Distance (Å)&quot;</span><span class="p">,</span>
+            <span class="n">title</span><span class="o">=</span><span class="s2">"Distance"</span><span class="p">,</span>
+            <span class="n">x_label</span><span class="o">=</span><span class="s2">"Distance (Å)"</span><span class="p">,</span>
             <span class="n">directory</span><span class="o">=</span><span class="n">directory</span>
         <span class="p">)</span>
 
     <span class="nd">@classmethod</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">torsion</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;PLUMEDAnalyzer&quot;</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Factory for PLUMED TORSION CV analyses.</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">torsion</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"."</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"PLUMEDAnalyzer"</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">"""Factory for PLUMED TORSION CV analyses.</span>
 
 <span class="sd">        Args:</span>
 <span class="sd">            species: CV species instantiated by PLUMEDAnalyzer</span>
 <span class="sd">            directory: The root directory where the colvar file is located. For example,</span>
-<span class="sd">                        alpha/traj/torsions_t1.dat &lt;- the root directory is &#39;alpha&#39;.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">                        alpha/traj/torsions_t1.dat &lt;- the root directory is 'alpha'.</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
             <span class="n">species</span><span class="o">=</span><span class="n">species</span><span class="p">,</span>
-            <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;torsions&quot;</span><span class="p">,</span>
+            <span class="n">prefix</span><span class="o">=</span><span class="s2">"torsions"</span><span class="p">,</span>
             <span class="n">conversion_factor</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-            <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Torsion Angle&quot;</span><span class="p">,</span>
-            <span class="n">x_label</span><span class="o">=</span><span class="s2">&quot;Angle (Radians)&quot;</span><span class="p">,</span>
+            <span class="n">title</span><span class="o">=</span><span class="s2">"Torsion Angle"</span><span class="p">,</span>
+            <span class="n">x_label</span><span class="o">=</span><span class="s2">"Angle (Radians)"</span><span class="p">,</span>
             <span class="n">directory</span><span class="o">=</span><span class="n">directory</span>
         <span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
               </details>
 
 
@@ -1714,10 +1761,10 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <div class="doc doc-object doc-function">
 
 
-<h4 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer.__init__" class="doc doc-heading">
-            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">prefix</span><span class="p">,</span> <span class="n">conversion_factor</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">x_label</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">)</span></code>
+<h5 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer.__init__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">prefix</span><span class="p">,</span> <span class="n">conversion_factor</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">x_label</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="s1">'.'</span><span class="p">)</span></code>
 
-</h4>
+</h5>
 
 
     <div class="doc doc-contents ">
@@ -1822,26 +1869,26 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">79</span>
-<span class="normal">80</span>
-<span class="normal">81</span>
-<span class="normal">82</span>
-<span class="normal">83</span>
-<span class="normal">84</span>
-<span class="normal">85</span>
-<span class="normal">86</span>
-<span class="normal">87</span>
-<span class="normal">88</span>
-<span class="normal">89</span>
-<span class="normal">90</span>
-<span class="normal">91</span>
-<span class="normal">92</span>
-<span class="normal">93</span>
-<span class="normal">94</span>
-<span class="normal">95</span>
-<span class="normal">96</span>
-<span class="normal">97</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">prefix</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">conversion_factor</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">x_label</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Initializes the instance&#39;s attributes for a given subclass with instances corresponding to a particular CV&#39;s metadata.</span>
+              <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">prefix</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">conversion_factor</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">x_label</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"."</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Initializes the instance's attributes for a given subclass with instances corresponding to a particular CV's metadata.</span>
 
 <span class="sd">    Args: </span>
 <span class="sd">        species: The species of CV, e.g. d8 for distance 8.</span>
@@ -1849,17 +1896,17 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <span class="sd">        conversion_factor: Scaling factor applied to the raw data values.</span>
 <span class="sd">        title: Title of the plot corresponding to the particular CV.</span>
 <span class="sd">        x_label: X axis label of the plot corresponding to the particular CV (including units).</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">species</span> <span class="o">=</span> <span class="n">species</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">prefix</span> <span class="o">=</span> <span class="n">prefix</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">conversion_factor</span> <span class="o">=</span> <span class="n">conversion_factor</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">x_label</span> <span class="o">=</span> <span class="n">x_label</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">directory</span> <span class="o">=</span> <span class="n">directory</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="s2">&quot;traj&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">prefix</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">species</span><span class="si">}</span><span class="s2">.dat&quot;</span><span class="p">)</span> <span class="c1"># derivative of {prefix} and {species} thus not passed into __init__</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="c1"># output name of the saved PNG. Needs to be different </span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-</code></pre></div></td></tr></table></div>
+    <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">directory</span><span class="p">,</span> <span class="s2">"traj"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">prefix</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">species</span><span class="si">}</span><span class="s2">.dat"</span><span class="p">)</span> <span class="c1"># derivative of {prefix} and {species} thus not passed into __init__</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">output_name</span> <span class="o">=</span> <span class="s2">""</span> <span class="c1"># output name of the saved PNG. Needs to be different </span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">output_path</span> <span class="o">=</span> <span class="s2">""</span>
+</code></pre></div></td></tr></tbody></table></div>
             </details>
     </div>
 
@@ -1868,14 +1915,14 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <div class="doc doc-object doc-function">
 
 
-<h4 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer.angle" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">angle</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">)</span></code>
+<h5 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer.angle" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">angle</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="s1">'.'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
   </span>
 
-</h4>
+</h5>
 
 
     <div class="doc doc-contents ">
@@ -1924,7 +1971,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
               </div>
             </td>
             <td>
-                  <code>&#39;.&#39;</code>
+                  <code>'.'</code>
             </td>
           </tr>
       </tbody>
@@ -1933,40 +1980,40 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">129</span>
-<span class="normal">130</span>
-<span class="normal">131</span>
-<span class="normal">132</span>
-<span class="normal">133</span>
-<span class="normal">134</span>
-<span class="normal">135</span>
-<span class="normal">136</span>
-<span class="normal">137</span>
-<span class="normal">138</span>
+              <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">138</span>
 <span class="normal">139</span>
 <span class="normal">140</span>
 <span class="normal">141</span>
 <span class="normal">142</span>
 <span class="normal">143</span>
 <span class="normal">144</span>
-<span class="normal">145</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">angle</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;PLUMEDAnalyzer&quot;</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Factory for PLUMED ANGLE CV analyses.</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">angle</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"."</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"PLUMEDAnalyzer"</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Factory for PLUMED ANGLE CV analyses.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        species: CV species instantiated by PLUMEDAnalyzer</span>
 <span class="sd">        directory: The root directory where the colvar file is located. For example,</span>
-<span class="sd">                    alpha/traj/torsions_t1.dat &lt;- the root directory is &#39;alpha&#39;.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">                    alpha/traj/torsions_t1.dat &lt;- the root directory is 'alpha'.</span>
+<span class="sd">    """</span>
     <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
         <span class="n">species</span><span class="o">=</span><span class="n">species</span><span class="p">,</span>
-        <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;angle&quot;</span><span class="p">,</span>
+        <span class="n">prefix</span><span class="o">=</span><span class="s2">"angle"</span><span class="p">,</span>
         <span class="n">conversion_factor</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Angle&quot;</span><span class="p">,</span>
-        <span class="n">x_label</span><span class="o">=</span><span class="s2">&quot;Angle (Radians)&quot;</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s2">"Angle"</span><span class="p">,</span>
+        <span class="n">x_label</span><span class="o">=</span><span class="s2">"Angle (Radians)"</span><span class="p">,</span>
         <span class="n">directory</span><span class="o">=</span><span class="n">directory</span>
     <span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
             </details>
     </div>
 
@@ -1975,14 +2022,14 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <div class="doc doc-object doc-function">
 
 
-<h4 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer.distance" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">distance</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">)</span></code>
+<h5 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer.distance" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">distance</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="s1">'.'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
   </span>
 
-</h4>
+</h5>
 
 
     <div class="doc doc-contents ">
@@ -2031,7 +2078,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
               </div>
             </td>
             <td>
-                  <code>&#39;.&#39;</code>
+                  <code>'.'</code>
             </td>
           </tr>
       </tbody>
@@ -2040,40 +2087,40 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">147</span>
-<span class="normal">148</span>
-<span class="normal">149</span>
-<span class="normal">150</span>
-<span class="normal">151</span>
-<span class="normal">152</span>
-<span class="normal">153</span>
-<span class="normal">154</span>
-<span class="normal">155</span>
-<span class="normal">156</span>
+              <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">156</span>
 <span class="normal">157</span>
 <span class="normal">158</span>
 <span class="normal">159</span>
 <span class="normal">160</span>
 <span class="normal">161</span>
 <span class="normal">162</span>
-<span class="normal">163</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">distance</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;PLUMEDAnalyzer&quot;</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Factory for PLUMED DISTANCE CV analyses.</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">distance</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"."</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"PLUMEDAnalyzer"</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Factory for PLUMED DISTANCE CV analyses.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        species: CV species instantiated by PLUMEDAnalyzer</span>
 <span class="sd">        directory: The root directory where the colvar file is located. For example,</span>
-<span class="sd">                    alpha/traj/distances_d8.dat &lt;- the root directory is &#39;alpha&#39;.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">                    alpha/traj/distances_d8.dat &lt;- the root directory is 'alpha'.</span>
+<span class="sd">    """</span>
     <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
         <span class="n">species</span><span class="o">=</span><span class="n">species</span><span class="p">,</span>
-        <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;distances&quot;</span><span class="p">,</span>
+        <span class="n">prefix</span><span class="o">=</span><span class="s2">"distances"</span><span class="p">,</span>
         <span class="n">conversion_factor</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Distance&quot;</span><span class="p">,</span>
-        <span class="n">x_label</span><span class="o">=</span><span class="s2">&quot;Distance (Å)&quot;</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s2">"Distance"</span><span class="p">,</span>
+        <span class="n">x_label</span><span class="o">=</span><span class="s2">"Distance (Å)"</span><span class="p">,</span>
         <span class="n">directory</span><span class="o">=</span><span class="n">directory</span>
     <span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
             </details>
     </div>
 
@@ -2082,10 +2129,10 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <div class="doc doc-object doc-function">
 
 
-<h4 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer.load_data" class="doc doc-heading">
+<h5 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer.load_data" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">load_data</span><span class="p">()</span></code>
 
-</h4>
+</h5>
 
 
     <div class="doc doc-contents ">
@@ -2093,30 +2140,61 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
         <p>Standardized data loading for all PLUMED plots.</p>
 
 
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                  <code><span title="pandas.DataFrame">DataFrame</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>pandas DataFrame of the intance's (species') colvar data file.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 99</span>
-<span class="normal">100</span>
-<span class="normal">101</span>
-<span class="normal">102</span>
-<span class="normal">103</span>
-<span class="normal">104</span>
+              <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">104</span>
 <span class="normal">105</span>
 <span class="normal">106</span>
 <span class="normal">107</span>
 <span class="normal">108</span>
-<span class="normal">109</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">load_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Standardized data loading for all PLUMED plots.&quot;&quot;&quot;</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">load_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Standardized data loading for all PLUMED plots.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        pandas DataFrame of the intance's (species') colvar data file.</span>
+<span class="sd">    """</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;File not found: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">"File not found: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         <span class="k">return</span> <span class="kc">None</span>
 
-    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;\s+&#39;</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="n">memory_map</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">'\s+'</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s1">'#'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">'c'</span><span class="p">,</span> <span class="n">memory_map</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">conversion_factor</span> <span class="o">!=</span> <span class="mf">1.0</span><span class="p">:</span>
         <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:]</span> <span class="o">*=</span> <span class="bp">self</span><span class="o">.</span><span class="n">conversion_factor</span>
     <span class="k">return</span> <span class="n">df</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
             </details>
     </div>
 
@@ -2125,14 +2203,14 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <div class="doc doc-object doc-function">
 
 
-<h4 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer.rad_gyration" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">rad_gyration</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">)</span></code>
+<h5 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer.rad_gyration" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">rad_gyration</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="s1">'.'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
   </span>
 
-</h4>
+</h5>
 
 
     <div class="doc doc-contents ">
@@ -2181,7 +2259,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
               </div>
             </td>
             <td>
-                  <code>&#39;.&#39;</code>
+                  <code>'.'</code>
             </td>
           </tr>
       </tbody>
@@ -2190,40 +2268,40 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">165</span>
-<span class="normal">166</span>
-<span class="normal">167</span>
-<span class="normal">168</span>
-<span class="normal">169</span>
-<span class="normal">170</span>
-<span class="normal">171</span>
-<span class="normal">172</span>
-<span class="normal">173</span>
-<span class="normal">174</span>
+              <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">174</span>
 <span class="normal">175</span>
 <span class="normal">176</span>
 <span class="normal">177</span>
 <span class="normal">178</span>
 <span class="normal">179</span>
 <span class="normal">180</span>
-<span class="normal">181</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">rad_gyration</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;PLUMEDAnalyzer&quot;</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Factory for PLUMED GYRATION CV analyses.</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rad_gyration</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"."</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"PLUMEDAnalyzer"</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Factory for PLUMED GYRATION CV analyses.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        species: CV species instantiated by PLUMEDAnalyzer</span>
 <span class="sd">        directory: The root directory where the colvar file is located. For example,</span>
-<span class="sd">                    alpha/traj/torsions_t1.dat &lt;- the root directory is &#39;alpha&#39;.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">                    alpha/traj/torsions_t1.dat &lt;- the root directory is 'alpha'.</span>
+<span class="sd">    """</span>
     <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
         <span class="n">species</span><span class="o">=</span><span class="n">species</span><span class="p">,</span>
-        <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;radii_of_gyration&quot;</span><span class="p">,</span>
+        <span class="n">prefix</span><span class="o">=</span><span class="s2">"radii_of_gyration"</span><span class="p">,</span>
         <span class="n">conversion_factor</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Distance&quot;</span><span class="p">,</span>
-        <span class="n">x_label</span><span class="o">=</span><span class="s2">&quot;Distance (Å)&quot;</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s2">"Distance"</span><span class="p">,</span>
+        <span class="n">x_label</span><span class="o">=</span><span class="s2">"Distance (Å)"</span><span class="p">,</span>
         <span class="n">directory</span><span class="o">=</span><span class="n">directory</span>
     <span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
             </details>
     </div>
 
@@ -2232,14 +2310,14 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <div class="doc doc-object doc-function">
 
 
-<h4 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer.torsion" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">torsion</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">)</span></code>
+<h5 id="plumed_tools.plotting.local_CVs.PLUMEDAnalyzer.torsion" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">torsion</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">directory</span><span class="o">=</span><span class="s1">'.'</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
   </span>
 
-</h4>
+</h5>
 
 
     <div class="doc doc-contents ">
@@ -2288,7 +2366,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
               </div>
             </td>
             <td>
-                  <code>&#39;.&#39;</code>
+                  <code>'.'</code>
             </td>
           </tr>
       </tbody>
@@ -2297,40 +2375,40 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">183</span>
-<span class="normal">184</span>
-<span class="normal">185</span>
-<span class="normal">186</span>
-<span class="normal">187</span>
-<span class="normal">188</span>
-<span class="normal">189</span>
-<span class="normal">190</span>
-<span class="normal">191</span>
-<span class="normal">192</span>
+              <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">192</span>
 <span class="normal">193</span>
 <span class="normal">194</span>
 <span class="normal">195</span>
 <span class="normal">196</span>
 <span class="normal">197</span>
 <span class="normal">198</span>
-<span class="normal">199</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">torsion</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;PLUMEDAnalyzer&quot;</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Factory for PLUMED TORSION CV analyses.</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">torsion</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">species</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directory</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"."</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">"PLUMEDAnalyzer"</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Factory for PLUMED TORSION CV analyses.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        species: CV species instantiated by PLUMEDAnalyzer</span>
 <span class="sd">        directory: The root directory where the colvar file is located. For example,</span>
-<span class="sd">                    alpha/traj/torsions_t1.dat &lt;- the root directory is &#39;alpha&#39;.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">                    alpha/traj/torsions_t1.dat &lt;- the root directory is 'alpha'.</span>
+<span class="sd">    """</span>
     <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
         <span class="n">species</span><span class="o">=</span><span class="n">species</span><span class="p">,</span>
-        <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;torsions&quot;</span><span class="p">,</span>
+        <span class="n">prefix</span><span class="o">=</span><span class="s2">"torsions"</span><span class="p">,</span>
         <span class="n">conversion_factor</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Torsion Angle&quot;</span><span class="p">,</span>
-        <span class="n">x_label</span><span class="o">=</span><span class="s2">&quot;Angle (Radians)&quot;</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s2">"Torsion Angle"</span><span class="p">,</span>
+        <span class="n">x_label</span><span class="o">=</span><span class="s2">"Angle (Radians)"</span><span class="p">,</span>
         <span class="n">directory</span><span class="o">=</span><span class="n">directory</span>
     <span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
             </details>
     </div>
 
@@ -2351,17 +2429,18 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
     </div>
 
-</div>
+</div><h2 id="scripts">Scripts</h2>
+
 
 <div class="doc doc-object doc-module">
 
 
 
-<h2 id="plumed_tools.plotting.plot_local_CVs" class="doc doc-heading">
+<h3 id="plumed_tools.plotting.plot_local_CVs" class="doc doc-heading">
             <code>plumed_tools.plotting.plot_local_CVs</code>
 
 
-</h2>
+</h3>
 
     <div class="doc doc-contents first">
 
@@ -2390,10 +2469,10 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <div class="doc doc-object doc-function">
 
 
-<h3 id="plumed_tools.plotting.plot_local_CVs.main" class="doc doc-heading">
+<h4 id="plumed_tools.plotting.plot_local_CVs.main" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">main</span><span class="p">()</span></code>
 
-</h3>
+</h4>
 
 
     <div class="doc doc-contents ">
@@ -2403,7 +2482,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/plot_local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 61</span>
+              <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 61</span>
 <span class="normal"> 62</span>
 <span class="normal"> 63</span>
 <span class="normal"> 64</span>
@@ -2452,17 +2531,17 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <span class="normal">107</span>
 <span class="normal">108</span>
 <span class="normal">109</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Main orchestration function to build tasks and execute them in parallel.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">traj_roots</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;alpha&quot;</span><span class="p">,</span> <span class="s2">&quot;beta&quot;</span><span class="p">,</span> <span class="s2">&quot;delta&quot;</span><span class="p">,</span> <span class="s2">&quot;gamma&quot;</span><span class="p">]</span>
-    <span class="n">summary_dir</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;CV_plots&quot;</span>
+<span class="sd">    """</span>
+    <span class="n">traj_roots</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"alpha"</span><span class="p">,</span> <span class="s2">"beta"</span><span class="p">,</span> <span class="s2">"delta"</span><span class="p">,</span> <span class="s2">"gamma"</span><span class="p">]</span>
+    <span class="n">summary_dir</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">"CV_plots"</span>
 
     <span class="c1"># Generate species identifiers</span>
-    <span class="n">dist_species</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;d</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">)]</span>
-    <span class="n">tors_species</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;t</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)]</span>
-    <span class="n">ang_species</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;a</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)]</span>
-    <span class="n">rad_species</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;rg</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)]</span>
+    <span class="n">dist_species</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"d</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">"</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">)]</span>
+    <span class="n">tors_species</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"t</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">"</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)]</span>
+    <span class="n">ang_species</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"a</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">"</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)]</span>
+    <span class="n">rad_species</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"rg</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">"</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)]</span>
 
     <span class="c1"># Assemble task list</span>
     <span class="n">tasks</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[]</span>
@@ -2472,7 +2551,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
         <span class="k">for</span> <span class="n">species</span> <span class="ow">in</span> <span class="n">all_species</span><span class="p">:</span>
             <span class="n">tasks</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">species</span><span class="p">,</span> <span class="n">root</span><span class="p">,</span> <span class="n">summary_dir</span><span class="p">))</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Starting parallel processing of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">tasks</span><span class="p">)</span><span class="si">}</span><span class="s2"> jobs...&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Starting parallel processing of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">tasks</span><span class="p">)</span><span class="si">}</span><span class="s2"> jobs..."</span><span class="p">)</span>
 
     <span class="n">missing_files</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">corrupted_files</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
@@ -2482,25 +2561,25 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
     <span class="k">with</span> <span class="n">ProcessPoolExecutor</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">cpu_count</span><span class="p">())</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
         <span class="n">futures</span> <span class="o">=</span> <span class="p">[</span><span class="n">executor</span><span class="o">.</span><span class="n">submit</span><span class="p">(</span><span class="n">process_species</span><span class="p">,</span> <span class="n">task</span><span class="p">)</span> <span class="k">for</span> <span class="n">task</span> <span class="ow">in</span> <span class="n">tasks</span><span class="p">]</span>
 
-        <span class="k">for</span> <span class="n">future</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">as_completed</span><span class="p">(</span><span class="n">futures</span><span class="p">),</span> <span class="n">total</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">tasks</span><span class="p">),</span> <span class="n">desc</span><span class="o">=</span><span class="s2">&quot;Plotting Progress&quot;</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">future</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">as_completed</span><span class="p">(</span><span class="n">futures</span><span class="p">),</span> <span class="n">total</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">tasks</span><span class="p">),</span> <span class="n">desc</span><span class="o">=</span><span class="s2">"Plotting Progress"</span><span class="p">):</span>
             <span class="n">result</span> <span class="o">=</span> <span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
-            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;SKIP&quot;</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"SKIP"</span><span class="p">):</span>
                 <span class="n">missing_files</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;ERROR&quot;</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"ERROR"</span><span class="p">):</span>
                 <span class="n">corrupted_files</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;SUCCESS&quot;</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"SUCCESS"</span><span class="p">):</span>
                 <span class="n">success_files</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">missing_files</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Summary: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">missing_files</span><span class="p">)</span><span class="si">}</span><span class="s2"> files were missing and skipped.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Summary: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">missing_files</span><span class="p">)</span><span class="si">}</span><span class="s2"> files were missing and skipped."</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">missing_files</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">corrupted_files</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Summary: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">corrupted_files</span><span class="p">)</span><span class="si">}</span><span class="s2"> files were empty or corrupted.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Summary: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">corrupted_files</span><span class="p">)</span><span class="si">}</span><span class="s2"> files were empty or corrupted."</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">corrupted_files</span><span class="p">)</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Successfully generated and copied </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">success_files</span><span class="p">)</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Successfully generated and copied </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">success_files</span><span class="p">)</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">success_files</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
             </details>
     </div>
 
@@ -2509,10 +2588,10 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <div class="doc doc-object doc-function">
 
 
-<h3 id="plumed_tools.plotting.plot_local_CVs.process_species" class="doc doc-heading">
+<h4 id="plumed_tools.plotting.plot_local_CVs.process_species" class="doc doc-heading">
             <code class="highlight language-python"><span class="n">process_species</span><span class="p">(</span><span class="n">task</span><span class="p">)</span></code>
 
-</h3>
+</h4>
 
 
     <div class="doc doc-contents ">
@@ -2576,7 +2655,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
             <details class="mkdocstrings-source">
               <summary>Source code in <code>src/plumed_tools/plotting/plot_local_CVs.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">10</span>
+              <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
@@ -2626,7 +2705,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 <span class="normal">57</span>
 <span class="normal">58</span>
 <span class="normal">59</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">process_species</span><span class="p">(</span><span class="n">task</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Worker function to process a single CV species in a separate process.</span>
 
 <span class="sd">    Args:</span>
@@ -2634,20 +2713,20 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
 <span class="sd">    Returns:</span>
 <span class="sd">        A status string indicating SUCCESS, SKIP, or ERROR for the task.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="n">species</span><span class="p">,</span> <span class="n">root</span><span class="p">,</span> <span class="n">summary_dir</span> <span class="o">=</span> <span class="n">task</span>
 
     <span class="c1"># Map prefixes to factory methods: (KDE_Factory, Heatmap_Factory)</span>
     <span class="n">factories</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Callable</span><span class="p">,</span> <span class="n">Callable</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s1">&#39;d&#39;</span><span class="p">:</span>  <span class="p">(</span><span class="n">KDEPlotter</span><span class="o">.</span><span class="n">distance</span><span class="p">,</span>      <span class="n">HeatmapPlotter</span><span class="o">.</span><span class="n">distance</span><span class="p">),</span>
-        <span class="s1">&#39;t&#39;</span><span class="p">:</span>  <span class="p">(</span><span class="n">KDEPlotter</span><span class="o">.</span><span class="n">torsion</span><span class="p">,</span>       <span class="n">HeatmapPlotter</span><span class="o">.</span><span class="n">torsion</span><span class="p">),</span>
-        <span class="s1">&#39;a&#39;</span><span class="p">:</span>  <span class="p">(</span><span class="n">KDEPlotter</span><span class="o">.</span><span class="n">angle</span><span class="p">,</span>         <span class="n">HeatmapPlotter</span><span class="o">.</span><span class="n">angle</span><span class="p">),</span>
-        <span class="s1">&#39;rg&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">KDEPlotter</span><span class="o">.</span><span class="n">rad_gyration</span><span class="p">,</span>  <span class="n">HeatmapPlotter</span><span class="o">.</span><span class="n">rad_gyration</span><span class="p">)</span>
+        <span class="s1">'d'</span><span class="p">:</span>  <span class="p">(</span><span class="n">KDEPlotter</span><span class="o">.</span><span class="n">distance</span><span class="p">,</span>      <span class="n">HeatmapPlotter</span><span class="o">.</span><span class="n">distance</span><span class="p">),</span>
+        <span class="s1">'t'</span><span class="p">:</span>  <span class="p">(</span><span class="n">KDEPlotter</span><span class="o">.</span><span class="n">torsion</span><span class="p">,</span>       <span class="n">HeatmapPlotter</span><span class="o">.</span><span class="n">torsion</span><span class="p">),</span>
+        <span class="s1">'a'</span><span class="p">:</span>  <span class="p">(</span><span class="n">KDEPlotter</span><span class="o">.</span><span class="n">angle</span><span class="p">,</span>         <span class="n">HeatmapPlotter</span><span class="o">.</span><span class="n">angle</span><span class="p">),</span>
+        <span class="s1">'rg'</span><span class="p">:</span> <span class="p">(</span><span class="n">KDEPlotter</span><span class="o">.</span><span class="n">rad_gyration</span><span class="p">,</span>  <span class="n">HeatmapPlotter</span><span class="o">.</span><span class="n">rad_gyration</span><span class="p">)</span>
     <span class="p">}</span>
 
-    <span class="n">prefix</span> <span class="o">=</span> <span class="s1">&#39;rg&#39;</span> <span class="k">if</span> <span class="n">species</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;rg&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="n">species</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">prefix</span> <span class="o">=</span> <span class="s1">'rg'</span> <span class="k">if</span> <span class="n">species</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">'rg'</span><span class="p">)</span> <span class="k">else</span> <span class="n">species</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="k">if</span> <span class="n">prefix</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">factories</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;ERROR: Unknown species prefix for </span><span class="si">{</span><span class="n">species</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"ERROR: Unknown species prefix for </span><span class="si">{</span><span class="n">species</span><span class="si">}</span><span class="s2">"</span>
 
     <span class="n">kde_factory</span><span class="p">,</span> <span class="n">heat_factory</span> <span class="o">=</span> <span class="n">factories</span><span class="p">[</span><span class="n">prefix</span><span class="p">]</span>
 
@@ -2657,12 +2736,12 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
 
     <span class="c1"># Validate file existence before loading</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">kde</span><span class="o">.</span><span class="n">filename</span><span class="p">):</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;SKIP: </span><span class="si">{</span><span class="n">kde</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2"> not found.&quot;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"SKIP: </span><span class="si">{</span><span class="n">kde</span><span class="o">.</span><span class="n">filename</span><span class="si">}</span><span class="s2"> not found."</span>
 
     <span class="c1"># Load data once to be shared by both plotters</span>
     <span class="n">data_df</span> <span class="o">=</span> <span class="n">kde</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">data_df</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;ERROR: </span><span class="si">{</span><span class="n">species</span><span class="si">}</span><span class="s2"> file empty or corrupt.&quot;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"ERROR: </span><span class="si">{</span><span class="n">species</span><span class="si">}</span><span class="s2"> file empty or corrupt."</span>
 
     <span class="c1"># Generate plots</span>
     <span class="n">kde</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data_df</span><span class="p">)</span>
@@ -2674,8 +2753,8 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
         <span class="k">if</span> <span class="n">plotter</span><span class="o">.</span><span class="n">output_path</span> <span class="ow">and</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">plotter</span><span class="o">.</span><span class="n">output_path</span><span class="p">):</span>
             <span class="n">shutil</span><span class="o">.</span><span class="n">copy2</span><span class="p">(</span><span class="n">plotter</span><span class="o">.</span><span class="n">output_path</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dest_summary</span><span class="p">,</span> <span class="n">plotter</span><span class="o">.</span><span class="n">output_name</span><span class="p">))</span>
 
-    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;SUCCESS: </span><span class="si">{</span><span class="n">species</span><span class="si">}</span><span class="s2"> in </span><span class="si">{</span><span class="n">root</span><span class="si">}</span><span class="s2">&quot;</span>
-</code></pre></div></td></tr></table></div>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"SUCCESS: </span><span class="si">{</span><span class="n">species</span><span class="si">}</span><span class="s2"> in </span><span class="si">{</span><span class="n">root</span><span class="si">}</span><span class="s2">"</span>
+</code></pre></div></td></tr></tbody></table></div>
             </details>
     </div>
 
@@ -2710,7 +2789,7 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -2743,11 +2822,13 @@ the KDE, the x-axis represents the range of the CV data, for example bond distan
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "navigation.top", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.tabs.sticky", "navigation.top", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
