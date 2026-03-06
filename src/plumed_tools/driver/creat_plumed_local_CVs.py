@@ -64,6 +64,12 @@ class InputMaker:
         return cls(no_of_mols, no_of_atoms=17)
 
     def write_angles(self, species: str, atoms: List[int]) -> None:    
+        """Writes angle CVs to 'plumed_angles.dat'.
+
+        Args:
+            species: Identifier for this CV set (e.g., 'a1').
+            atoms: List of atoms in the molecule over which to calculate the angle.
+        """
         labels = []    
         filename = "plumed_angles.dat"
         with open(filename, 'a') as f:
@@ -76,11 +82,11 @@ class InputMaker:
                 
             f.write("\n")    
             args = ",".join(labels)    
-            f.write(f"PRINT ARG={args} FILE=angle_{species}.dat\n")
+            f.write(f"PRINT ARG={args} FILE=angles_{species}.dat\n")
             f.write("\n")
 
     def write_distances(self, species: str, start_index: int, offset: int) -> None:
-        """Writes distance CVs to 'plumed_distance.dat'.
+        """Writes distance CVs to 'plumed_distances.dat'.
 
         Args:
             species: Identifier for this CV set (e.g., 'd1').
@@ -95,7 +101,7 @@ class InputMaker:
             )
             return None
         labels = []
-        filename = "plumed_distance.dat"
+        filename = "plumed_distances.dat"
         with open(filename, 'a') as f:
             for i in range(1, self.no_of_mols + 1):
                 mol_offset = (i - 1) * self.no_of_atoms
@@ -107,7 +113,7 @@ class InputMaker:
             f.write(f"\nPRINT ARG={args} FILE=distances_{species}.dat\n\n")
 
     def write_gyrations_list(self, species: str, atoms: List[int]) -> None:
-        """Writes Radius of Gyration CVs to 'plumed_gyration.dat'.
+        """Writes Radius of Gyration CVs to 'plumed_radii_of_gyration.dat'.
 
         Args:
             species: Identifier for this CV set (e.g., 'rg1').
@@ -128,7 +134,7 @@ class InputMaker:
             f.write(f"PRINT ARG={args} FILE=radii_of_gyration_{species}.dat\n\n")
 
     def write_gyrations_range(self, species: str, start_index: int, offset: int) -> None:
-        """Writes Radius of Gyration CVs to 'plumed_gyration.dat'.
+        """Writes Radius of Gyration CVs to 'plumed_radii_of_gyration.dat'.
 
         Args:
             species: Identifier for this CV set (e.g., 'rg1').
@@ -155,7 +161,7 @@ class InputMaker:
             f.write(f"\nPRINT ARG={args} FILE=radii_of_gyration_{species}.dat\n\n")
 
     def write_torsions(self, species: str, a1: int, a2: int, a3: int, a4: int) -> None:
-        """Writes torsion CVs to 'plumed_torsion.dat'.
+        """Writes torsion CVs to 'plumed_torsions.dat'.
 
         Args:
             species: Identifier for this CV set (e.g., 't1').
@@ -165,7 +171,7 @@ class InputMaker:
             a4: Atom 4 of the torsion angle.
         """
         labels = []
-        filename = "plumed_torsion.dat"
+        filename = "plumed_torsions.dat"
         with open(filename, 'a') as f:
             for i in range(1, self.no_of_mols + 1):
                 off = (i - 1) * self.no_of_atoms
