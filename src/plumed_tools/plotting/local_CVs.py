@@ -43,7 +43,7 @@ plumed_tools as an editable pip package.
 ```python
 import plumed_tools as pt
 # or if you like to be more specific: 
-# from pt.plotting.local_CVs import KDEPlotter, HeatmapPlotter  
+# from plumed_tools.plotting.local_CVs import KDEPlotter, HeatmapPlotter  
 
 def main():
     root = "location_of_your_MD_input_files"
