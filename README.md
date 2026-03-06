@@ -1,7 +1,23 @@
-# plumed-tools
-Various modules/scripts relevant to PLUMED collective variable analysis of molecular dynamics trajectories.
+# plumed_tools
 
-## plotting/
-Contains modules/scripts relevant to creating plots from PLUMED colvar files.
-### local_CVs.py
-A plotting module, useful for analyzing PLUMED colvar files from local collective variables (CVs).
+![Plumed Tools Logo](assets/logo.png){ align=center }
+
+A pip package of analysis and visualization tools for PLUMED collective variables.
+
+## Installation
+Step 1. Clone the github repository for the plumed-tools project to your local system/HPC.
+
+```bash
+git clone https://github.com/Logan-Estridge/plumed-tools.git
+```
+
+Step 2. Install the plumed_tools package via pip (editable)
+```bash
+cd plumed-tools
+pip install -e .
+```
+Now you can access any modules/functions inside plumed-tools from anywhere on your 
+system/HPC! :)
+
+If the need arises, you can change any of the source code for the pip package
+in the location you cloned the git repository. 

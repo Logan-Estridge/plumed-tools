@@ -1,15 +1,15 @@
 /* Increase logo size and prevent it from being cropped */
 .md-header__button.md-logo img {
-    height: 4.5rem;   /* Standard is 1.2rem; increase this as needed */
+    height: 1.5rem;   /* Standard is 1.2rem; increase this as needed */
     width: auto;
 }
 
 .md-header__button.md-logo {
-    margin: 0.2rem;
+    margin: 0.1rem;
     padding: 0;
 }
 
 /* Adjust header height to fit the larger logo if necessary */
 .md-header {
-    height: 5rem;
+    height: 1.6rem;
 }

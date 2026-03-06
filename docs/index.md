@@ -1,5 +1,7 @@
 # plumed_tools
 
+![Plumed Tools Logo](assets/logo.png){ align=center }
+
 A pip package of analysis and visualization tools for PLUMED collective variables.
 
 ## Installation
