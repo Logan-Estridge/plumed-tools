@@ -1,5 +1,3 @@
-# Treat everything as vendored (ignored from stats)
 * linguist-vendored
 
-# Explicitly include the src directory
 src/** linguist-vendored=false
