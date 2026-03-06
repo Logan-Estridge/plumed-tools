@@ -111,7 +111,7 @@ class PLUMEDAnalyzer:
             raise FileNotFoundError(f"File not found: {self.filename}")
             return None
 
-        df = pd.read_csv(self.filename, sep='\s+', comment='#', header=None, engine='c', memory_map=True)
+        df = pd.read_csv(self.filename, sep=r'\s+', comment='#', header=None, engine='c', memory_map=True)
         
         if self.conversion_factor != 1.0:
             df.iloc[:, 1:] *= self.conversion_factor
