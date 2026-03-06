@@ -1,6 +1,6 @@
 # plumed_tools
 
-![Plumed Tools Logo](./docs/assets/logo.png){ align=center }
+![Plumed Tools Logo](./docs/assets/logo.png)
 
 A pip package of analysis and visualization tools for PLUMED collective variables.
 
@@ -21,3 +21,5 @@ system/HPC! :)
 
 If the need arises, you can change any of the source code for the pip package
 in the location you cloned the git repository. 
+
+Please read the docs for more info: https://logan-estridge.github.io/plumed-tools/
