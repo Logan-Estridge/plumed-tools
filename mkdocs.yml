@@ -8,6 +8,7 @@ theme:
     - navigation.sections
     - navigation.tabs.sticky
     - navigation.top
+    - navigation.footer
     - toc.integrate
     - search.suggest
     - search.highlight
