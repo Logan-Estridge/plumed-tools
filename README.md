@@ -24,3 +24,6 @@ in the location you cloned the git repository.
 
 ## Documentation
 Please read the docs for more info: https://logan-estridge.github.io/plumed-tools/
+
+## Acknowledgement
+The development of this tool was supported by a DOE Early Career Award (BES Condensed Phase and Interfacial Molecular Science (CPIMS) / DE-SC0024283)
